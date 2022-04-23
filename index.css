@@ -15,10 +15,22 @@ body {
 .container {
   width: 500px;
   margin: 0 auto;
+  display: grid;
+  gap: 50px;
+  align-items: flex-start;
+  grid-template-areas: 
+  'score game'
+  'next game';
 }
 
 .game-area {
   border: solid #000;
   border-width: 0px 2px 3px 2px;
   display: block;
+}
+
+.message {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
 }
